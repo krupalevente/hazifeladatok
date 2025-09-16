@@ -208,57 +208,7 @@ namespace hazi_09._16
                 double terulet = Math.PI * r * r * (alfa / 360);
                 Console.WriteLine($"Körív hossza: {ivHossz}, Szelet területe: {terulet}");
             }
-        }
 
-    }
-}
-
-        static void DerekszoguAtfogo()
-        {
-            Console.Write("Első befogó: ");
-            double a = double.Parse(Console.ReadLine());
-            Console.Write("Második befogó: ");
-            double b = double.Parse(Console.ReadLine());
-
-            double c = Math.Sqrt(a * a + b * b);
-            Console.WriteLine($"Átfogó hossza: {c:F2}");
-        }
-
-        static void TeglatestFelszinTerfogat()
-        {
-            Console.Write("a él: ");
-            double a = double.Parse(Console.ReadLine());
-            Console.Write("b él: ");
-            double b = double.Parse(Console.ReadLine());
-            Console.Write("c él: ");
-            double c = double.Parse(Console.ReadLine());
-
-            double felszin = 2 * (a * b + a * c + b * c);
-            double terfogat = a * b * c;
-            Console.WriteLine($"Felszín: {felszin}, Térfogat: {terfogat}");
-        }
-
-        static void KorKeruletTerulet()
-        {
-            Console.Write("Kör átmérője: ");
-            double d = double.Parse(Console.ReadLine());
-            double r = d / 2;
-            double kerulet = 2 * Math.PI * r;
-            double terulet = Math.PI * r * r;
-            Console.WriteLine($"Kerület: {kerulet}, Terület: {terulet}");
-        }
-
-        static void KorivTeruletIv()
-        {
-            Console.Write("Sugár: ");
-            double r = double.Parse(Console.ReadLine());
-            Console.Write("Középponti szög (fok): ");
-            double alfa = double.Parse(Console.ReadLine());
-
-            double ivHossz = 2 * Math.PI * r * (alfa / 360);
-            double terulet = Math.PI * r * r * (alfa / 360);
-            Console.WriteLine($"Körív hossza: {ivHossz}, Szelet területe: {terulet}");
-        }
     }
 
 }
